@@ -8,7 +8,7 @@ export default function Header() {
     <header className="bg-gray-800 text-white p-4 shadow-lg sticky top-0 z-10">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo/Branding */}
-        <Link href="/" className="text-2xl font-bold text-green-400">
+        <Link href="/" className="text-2xl font-bold text-white-400">
           Mohalla Bazaar
         </Link>
 
@@ -20,11 +20,7 @@ export default function Header() {
                 Home
               </Link>
             </li>
-            <li>
-              <Link href="/features" className="hover:text-green-400 transition duration-300">
-                Features
-              </Link>
-            </li>
+          
           </ul>
         </nav>
       </div>

@@ -22,7 +22,7 @@ export default function HomePage() {
                 </p>
 
                 <a href="/MohallaBazaar.apk" className="px-14 py-5 text-xl font-bold text-gray-900 bg-green-400 rounded-full shadow-lg hover:bg-green-500 transition transform hover:scale-105 animate-bounce">
-                    ⬇️ DOWNLOAD APK
+                    ⬇️OFFICAIL DOWNLOAD APK
                 </a>
 
                 <p className="mt-6 text-sm text-gray-400">For Android devices only • Version 1.0.0</p>
@@ -36,11 +36,11 @@ export default function HomePage() {
 
                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-16 relative z-10">Our Features</h2>
                 
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-10 relative z-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 relative z-10">
                     {[
                         { icon: "🛒", title: "Local Shopping", desc: "Find trusted shops in your neighborhood." },
                         { icon: "⚡", title: "Fast Delivery", desc: "Get your orders instantly." },
-                        { icon: "🔒", title: "Secure Payments", desc: "All transactions are encrypted." },
+                       
                         { icon: "📱", title: "Easy UI", desc: "Smooth and friendly user experience." },
                     ].map((f, i) => (
                         <div key={i} className="p-8 bg-gray-800/60 backdrop-blur-md rounded-3xl shadow-xl hover:shadow-2xl transform hover:-translate-y-3 hover:scale-105 transition duration-500 group relative overflow-hidden">
@@ -65,26 +65,58 @@ export default function HomePage() {
                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-16">Our Impact</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {[
-                        { value: "500+", label: "Local Shops" },
-                        { value: "20K+", label: "Orders Delivered" },
-                        { value: "10K+", label: "Happy Customers" },
+                        { value: "100+", label: "category" },
+                        { value: "1K+", label: "products" },
+                        { value: "30 min", label: "delivery time" },
                     ].map((stat, i) => (
                         <div key={i} className="p-6 bg-gray-800/60 rounded-3xl shadow-lg hover:shadow-2xl transition">
-                            <p className="text-4xl font-extrabold text-purple-400 mb-2">{stat.value}</p>
+                            <p className="text-4xl font-extrabold text-white-400 mb-2">{stat.value}</p>
                             <p className="text-gray-300">{stat.label}</p>
                         </div>
                     ))}
                 </div>
             </section>
 
-            {/* Testimonials Section */}
+          
+
+            {/* Installation Steps Section */}
+<section id="install" className="py-24 px-6 text-center bg-gray-900">
+    <h2 className="text-4xl md:text-5xl font-bold text-white mb-16">How to Install Mohalla Bazaar App</h2>
+
+    <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+        {/* Step 1 */}
+        <div className="p-8 bg-gray-800/60 rounded-3xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-3">
+            <div className="text-6xl mb-6">⬇️</div>
+            <h3 className="text-2xl font-bold mb-3 text-green-400">Step 1: Download the APK</h3>
+            <p className="text-gray-300">Open your browser, visit our official website, and download the Mohalla Bazaar APK for Android.</p>
+        </div>
+
+        {/* Step 2 */}
+        <div className="p-8 bg-gray-800/60 rounded-3xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-3">
+            <div className="text-6xl mb-6">📲</div>
+            <h3 className="text-2xl font-bold mb-3 text-green-400">Step 2: Install the App</h3>
+            <p className="text-gray-300">Tap the downloaded APK and allow installation from unknown sources to install Mohalla Bazaar on your device.</p>
+        </div>
+
+        {/* Step 3 */}
+        <div className="p-8 bg-gray-800/60 rounded-3xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-3">
+            <div className="text-6xl mb-6">🎉</div>
+            <h3 className="text-2xl font-bold mb-3 text-green-400">Step 3: Explore the App</h3>
+            <p className="text-gray-300">Launch the app to browse local shops, place orders, and enjoy fast & secure shopping right from your phone.</p>
+        </div>
+    </div>
+</section>
+
+
+
+  {/* Testimonials Section */}
             <section id="testimonials" className="py-24 bg-gray-800 text-center">
                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-16">What Users Say</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {[
-                        { text: "Amazing app! Local shopping is so convenient.", name: "Riya S." },
-                        { text: "Fast deliveries and secure payments, love it!", name: "Arjun K." },
-                        { text: "User-friendly UI, makes shopping fun and easy.", name: "Priya M." },
+                        { text: "“Shopping local has never been easier. I found all my favorite stores in one app!”", name: "Adnan" },
+                        { text: "“Fast deliveries and smooth checkout. Love the app!”", name: "Sameer" },
+                        { text: "User-friendly UI, makes shopping fun and easy.", name: "shahid" },
                     ].map((t, i) => (
                         <div key={i} className="p-8 bg-gray-700/60 rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 relative">
                             <div className="absolute -top-4 left-4 text-6xl text-purple-400">“</div>
@@ -94,6 +126,8 @@ export default function HomePage() {
                     ))}
                 </div>
             </section>
+
+
 
         </div>
     );

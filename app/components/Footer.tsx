@@ -11,11 +11,11 @@ export default function Footer() {
         <p className="text-sm">
           &copy; {currentYear} Mohalla Bazaar. All rights reserved.
         </p>
-        <div className="mt-2 text-xs text-gray-400">
+        {/* <div className="mt-2 text-xs text-gray-400">
           <a href="/privacy" className="hover:text-green-400 mx-2">Privacy</a>
           <span className="mx-1">|</span>
           <a href="/terms" className="hover:text-green-400 mx-2">Terms</a>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
